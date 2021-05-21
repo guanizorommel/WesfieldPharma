@@ -29,7 +29,7 @@ p {
     min-height: 600px;
     background-color: rgb(65, 62, 62);
     background-blend-mode: multiply;
-    background-image: url(/img/herobg.jpg);
+    background-image: url(img/herobg.jpg);
     background-position: center center;
     background-size: cover;
 }
