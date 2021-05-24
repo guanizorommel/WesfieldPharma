@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap" rel="stylesheet">>
     <title>Westfield Pharmaceuticals</title>
 </head>
 <body>
@@ -19,9 +19,11 @@
                 <button>Contact Us</button> <button>View Our Products</button>
             </div>
 
+            
             <div class="herocontent">
-                <img src="img/image1.jpg" alt="vitamin c, ultra cee">
+                <img name=slide src="img/image1.jpg" alt="vitamin c, ultra cee">
             </div>
+
         </div>
     </div>
 
@@ -81,10 +83,42 @@
     </div>
 
     <div class="section">
+        
         <div class="sectioncontainer">
             <h2>Featured Products</h2>
+            
         </div>
     </div>
+
+    <!-- JS for Slideshow in Hero-->
+<script>
+    let i = 0;
+    let image = [];
+    let time = 3000;
+
+    //Image list
+    image[0] = 'img/image1.jpg'
+    image[1] = 'img/image2.jpg'
+    image[2] = 'img/image3.jpg'
+    image[3] = 'img/image4.jpg'
+
+    function changeImg () {
+        document.slide.src = image[i];
+
+        if (i < image.length - 1) {
+            i++;
+
+        } else {
+            i = 0
+        }
+
+        setTimeout("changeImg()", time);
+    }
+
+    window.onload = changeImg;
+
+
+</script>
     
 </body>
 </html>
