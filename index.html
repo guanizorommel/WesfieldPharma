@@ -21,7 +21,23 @@
 
             
             <div class="herocontent">
-                <img name=slide src="img/image1.jpg" alt="vitamin c, ultra cee">
+                <!--Slider HTML-->
+                <div class="image-sliderfade fade">
+                    <img src="img/image1.jpg" alt="vitamin c, ultra cee">
+                </div>
+
+                <div class="image-sliderfade fade">
+                    <img src="img/image2.jpg" alt="vitamin c, ultra cee">
+                </div>
+
+                <div class="image-sliderfade fade">
+                    <img src="img/image3.jpg" alt="vitamin c, ultra cee">
+                </div>
+
+                <div class="image-sliderfade fade">
+                    <img src="img/image4.jpg" alt="vitamin c, ultra cee">
+                </div>
+
             </div>
 
         </div>
@@ -90,34 +106,39 @@
         </div>
     </div>
 
-    <!-- JS for Slideshow in Hero-->
+    
+
+
+<!-- Slider JS for new HTML Slider-->
 <script>
-    let i = 0;
-    let image = [];
-    let time = 3000;
+    let slideIndex = 0;
+    showSlides(); //call showslide method
 
-    //Image list
-    image[0] = 'img/image1.jpg'
-    image[1] = 'img/image2.jpg'
-    image[2] = 'img/image3.jpg'
-    image[3] = 'img/image4.jpg'
+    function showSlides() {
+        let i;
 
-    function changeImg () {
-        document.slide.src = image[i];
+        // get the array of divs with classname image-sliderfade
+        let slides = document.getElementsByClassName("image-sliderfade");
 
-        if (i < image.length - 1) {
-            i++;
-
-        } else {
-            i = 0
+        for ( i = 0; i <slides.length; i++) {
+            //initially set the display to none for every image
+            slides[i].style.display = "none";
         }
 
-        setTimeout("changeImg()", time);
+        //increase by 1, global variable
+        slideIndex++;
+
+        //check for boundary
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+
+        //Change image every what seconds
+        setTimeout(showSlides, 3000);
+    
     }
-
-    window.onload = changeImg;
-
-
 </script>
     
 </body>

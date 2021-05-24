@@ -53,6 +53,29 @@ p {
     box-shadow: 10px 10px 15px gray;
 }
 
+/*Slider Image CSS */
+.image-sliderfade {
+    display: none;
+}
+
+.fade {
+    -webkit-animation-name: fade-image;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade-image;
+    animation-duration: 3s;
+}
+
+@-webkit-keyframes fade-image {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade-image {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* End of Slider Image CSS */
 
 
 button{
