@@ -105,6 +105,14 @@ button:hover {
     letter-spacing: 4px;
 }
 
+.buttoncontainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    
+}
+
+
 /** End of Hero CSS */
 
 /** Start of Section / Services  CSS **/
@@ -182,7 +190,7 @@ button:hover {
 
 .sectioncol {
     width: 100%;
-    padding: 4em 1.25em;
+    padding: 4em 2em;
 }
 
 .h2titles {
@@ -203,6 +211,7 @@ button:hover {
 .aboutimage img {
     max-width: 100%;
     box-shadow: 10px 10px 15px gray;;
+    padding: 1em 1em;
 }
 
 
@@ -224,4 +233,40 @@ button:hover {
     color: #da251c;
     font-weight: 700;
     font-size: 1.5rem;
+}
+
+.featuredcontainer {
+    background-color: #2f3033;
+    
+}
+
+.featuredsection {
+    width: 80%;
+    margin: 0 auto;
+    padding: 5em 0em;
+}
+
+.featuredtitle {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+
+.featured__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.featured__col {
+    padding: 1em 1em;
+    align-self: flex-start;
+}
+
+.featured__col img {
+    max-width: 100%;
 }
