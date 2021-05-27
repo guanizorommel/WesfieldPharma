@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+:root {
+    --swiper-theme-color: #da251c !important
+}
+
 h1, p {
     font-family: "Roboto", sans-serif;
     margin-bottom: 20px;
@@ -254,7 +258,6 @@ button:hover {
     text-align: center;
     text-transform: uppercase;
     margin: 0 auto;
-    margin-bottom: 1em;
 }
 
 .featured__row {
@@ -270,3 +273,26 @@ button:hover {
 .featured__col img {
     max-width: 100%;
 }
+
+/* Swiper CSS */
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+  .swiper-pagination-bullet-active {
+      color: #da251c;
+  }

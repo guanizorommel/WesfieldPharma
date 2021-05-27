@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap" rel="stylesheet">
@@ -16,7 +21,7 @@
             <div class="herocontent">
                 <h1>We Develop, Distribute and Market</h1>
                 <p>High Quality <span class="heroemphasize">Branded</span> & <span class="heroemphasize">Generic</span> Pharmaceutical Products</p>
-                <button>Contact Us</button> <button>View Our Products</button>
+                <button>Contact Us</button> <button>Browse All Products</button>
             </div>
 
             
@@ -129,29 +134,56 @@
         </div>
     </div>
 
+ 
+
+    <!-- Swiper -->
     <div class="featuredcontainer">
         <div class="featuredsection">
             <h2 class="featuredtitle">Featured Products</h2>
-            <div class="featured__row">
-                <div class="featured__col">
-                    <img src="img/productzuma.jpg" alt="">
-                </div>
 
-                <div class="featured__col">
-                    <img src="img/productasflem.jpg" alt="">
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="img/productzuma.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/productasflem.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/productcranber.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                  </div>
                 </div>
+                <div class="swiper-pagination"></div>
+              </div>
 
-                <div class="featured__col">
-                    <img src="img/productcranber.jpg" alt="">
-                </div>
-            </div>
+              <div class="buttoncontainer">
+                <button>Browse All Products</button>
+        </div>
 
-            <div class="buttoncontainer">
-                    <button>Browse All Products</button>
-            </div>
-            
+              
+
         </div>
     </div>
+
+    
 
 
     
@@ -188,6 +220,29 @@
     
     }
 </script>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
     
 </body>
 </html>
