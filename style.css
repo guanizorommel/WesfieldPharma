@@ -38,8 +38,55 @@ p {
     background-size: cover;
 }
 
+.navcontainer {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    border: 4px solid saddlebrown;
+}
+
+
+.logo img {
+    margin-right: 1em; /*add margin on right of logo */
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 4px solid rebeccapurple;
+}
+
+
+.nav {
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    border: 4px solid saddlebrown;
+}
+
+.nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none; /*removes the dots in ul */
+    display: flex; /* makes the nav__item or li to become row */
+    border: 4px solid yellow;
+}
+
+.nav__item {
+    margin-right: 2em; /*creates space on right of every li*/
+
+}
+
+.nav__link {
+    text-transform: uppercase;
+    text-decoration: none; /*removes underline in the li*/
+}
+
+
+
 .container {
-    /* border: 4px solid green; */
+    border: 4px solid green;
     display: flex;
     width: 80%;
     margin: 0 auto;
