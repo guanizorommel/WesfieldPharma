@@ -263,6 +263,7 @@ button:hover {
 .sectioncol {
     width: 100%;
     padding: 4em 2em;
+    /* border: 4px solid rgb(196, 3, 35);   */
 }
 
 .h2titles {
@@ -341,6 +342,44 @@ button:hover {
 .featured__col img {
     max-width: 100%;
 }
+
+/*Contact Us CSS Starts Here*/
+.googlemap {
+    max-width: 100%;
+    box-shadow: 10px 10px 15px gray;;
+    padding: 1em 1em;
+    width:100%;
+}
+
+.contactform {
+    width: 100%;
+}
+
+.h3__contact {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 1rem;
+    color: #2f3033;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    text-transform: uppercase;
+}
+
+.contactform {
+    max-width: 100%;
+}
+
+.inputBox {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    margin-bottom: 20px;
+    border: 4px solid rgb(196, 3, 35);
+}
+
+
+
 
 /* Swiper CSS */
 .swiper-container {
