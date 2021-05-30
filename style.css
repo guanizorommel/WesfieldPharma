@@ -30,18 +30,26 @@ p {
 /** Hero CSS Starts Here */
 .hero {
     /* border: 4px solid blueviolet; */
-    min-height: 600px;
+    min-height: 800px;
     background-image: url(img/herobg.jpg);
     background-color: rgb(65, 62, 62);
     background-blend-mode: multiply;
     background-position: center center;
     background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.herotext {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
 }
 
 .navcontainer {
     width: 80%;
     margin: 0 auto;
-    padding: 0;
+    padding: 1em 0em;
     /* border: 4px solid saddlebrown; */
 }
 
@@ -83,10 +91,10 @@ p {
 }
 
 .nav__item {
-    margin-left: 2em; /*creates space on left of every li*/
+    margin-left: 1.75em; /*creates space on left of every li*/
     font-family: "Roboto", sans-serif;
     font-weight: 900;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 
@@ -115,9 +123,12 @@ p {
 }
 
 .herocontent {
-    /* border: 4px solid purple; */
     width: 50%; 
-    
+    padding: 0em 2em;
+}
+
+.herotextcontent {
+    flex-grow: 1;
 }
 
 .herocontent img {
