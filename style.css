@@ -386,7 +386,57 @@ button:hover {
     padding: 0;
     max-width: 100%;
     margin-bottom: 20px;
-    border: 4px solid rgb(196, 3, 35);
+    /* border: 4px solid rgb(196, 3, 35); */
+}
+
+.inputBox input,
+.inputBox textarea {
+    width: 80%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+
+.inputBox input[type="submit"] {
+    font-size: 1em;
+    color: #fff;
+    background: #da251c;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.footersection {
+    background-color: #2f3033;
+    border: 4px solid green;
+}
+
+
+.footercontainer {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1em 0em;
+    border: 4px solid rgb(196, 3, 35); 
+}
+
+.footerrow {
+    border: 4px solid violet;
+    display: flex;
+    flex-grow: 1;
+}
+
+.footercol {
+    border: 4px solid gold;
 }
 
 
