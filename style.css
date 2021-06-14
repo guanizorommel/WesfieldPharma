@@ -333,6 +333,7 @@ button:hover {
 
 .featuredcontainer {
     background-color: #2f3033;
+    padding: 3em 0em;
     
 }
 
@@ -450,13 +451,13 @@ button:hover {
 
 .footertitle{
     font-family: "Roboto", sans-serif;
-    color: rgb(202, 199, 199);
+    color: #fff;
     font-size: 1rem;
     font-weight: 200;
 }
 
 .footertext {
-    color: rgb(202, 199, 199);
+    color: #fff;
     font-size: 1rem;
     padding: 0.5em 0em;
 }
@@ -490,4 +491,38 @@ button:hover {
 
   .swiper-pagination-bullet-active {
       color: #da251c;
+  }
+
+
+  /*Responsiveness Media Queries*/
+
+  @media (max-width: 1100px) {
+      .herocontent {
+          display:none;
+      }
+  }
+
+  @media (max-width:960px) {
+      .row {
+          flex-direction: column;
+      }
+      .nav {
+          align-content: center;
+          justify-content: center;
+          text-align: center;
+          width: 100%;
+          margin-top: 20px;
+      }
+
+      .sectionrow {
+          flex-direction: column;
+          align-content: center;
+          justify-content: center;
+          text-align: center;
+          width: 100%;
+      }
+
+      .services {
+          flex-wrap: wrap;
+      }
   }
