@@ -525,14 +525,14 @@ button:hover {
       .services {
           flex-wrap: wrap;
       }
+
+      .sectioncontainer {
+        width: 95%;
+    }
   }
 
   @media (max-width:700px) {
       .container {
-          width: 95%;
-      }
-
-      .sectioncontainer {
           width: 95%;
       }
 
@@ -543,4 +543,12 @@ button:hover {
       .companytitle {
           display:none;
       }
+
+      .herotextcontent h1 {
+          font-size: 3rem;
+      }
+      .herotextcontent p {
+          font-size: 2rem;
+      }
+
   }
