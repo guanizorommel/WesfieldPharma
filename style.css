@@ -526,3 +526,13 @@ button:hover {
           flex-wrap: wrap;
       }
   }
+
+  @media (max-width:600px) {
+      .container {
+          width: 95%;
+      }
+
+      .sectioncontainer {
+          width: 95%;
+      }
+  }
