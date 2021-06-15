@@ -535,4 +535,12 @@ button:hover {
       .sectioncontainer {
           width: 95%;
       }
+
+      .nav {
+          display: none;
+      }
+
+      .companytitle {
+          display:none;
+      }
   }
