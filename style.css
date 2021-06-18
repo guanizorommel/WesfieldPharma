@@ -590,4 +590,21 @@ button:hover {
     }
   }
 
+  @media (max-width:400px){
+      .herotextcontent h1 {
+          font-size: 2rem;
+      }
+
+      .herotextcontent p {
+          font-size: 1rem;
+      }
+
+      button {
+          padding: 10px 10px;
+      }
+
+  }
+
+
+
   
